@@ -7,7 +7,9 @@ var sendMessage = false;
 string clientID = args[0];
 
 
-Console.WriteLine("my client ID: " + clientID);
+Console.WriteLine("-------------------------------------------------");
+Console.WriteLine("-> run client..... [clinetId:" + clientID + "]");
+
 using HttpClient client = new();
 
 //-----------------------------------------------------------------
@@ -18,23 +20,30 @@ var hubCon = new HubConnectionBuilder()
    .WithAutomaticReconnect()
    .Build();
 
+// waiting for server feedback
 hubCon.On<string>("ReceiveMessage", (message) =>
 {
-   var newMessage = $"{message}";
+   var newMessage = $"-< Confirmation {message}";
    Console.WriteLine(newMessage);
+   Console.WriteLine("=================================================");
+   Console.WriteLine("");
 });
 
+// start signalR client
 hubCon.StartAsync().ContinueWith(task => {
+      Console.WriteLine("-> connecting to message server .......");
    if (task.IsFaulted) {
       Console.WriteLine("There was an error opening the connection:{0}");
    } else {
-      Console.WriteLine("Connected");
+      Console.WriteLine("-> connected");
+      Console.WriteLine("-------------------------------------------------");
       hubCon.InvokeAsync< string >("RegisterClient", clientID).Wait();
       isConnected = true;
 
    }
 }).Wait();                                    
 //-----------------------------------------------------------------
+
 
 //-----------------------------------------------------------------
 // Sending TX to DRProxy
@@ -50,18 +59,14 @@ async Task<bool> ProcessRepositoriesAsync(HttpClient client) {
    };
    string strPayload = JsonSerializer.Serialize(payload);
    var response = await client.PostAsync("http://localhost:5130/api/receipt", new StringContent(strPayload, Encoding.UTF8, "application/json"));
-   //Console.WriteLine(response);
    var contents = await response.Content.ReadAsStringAsync();
-   //Console.WriteLine(contents);
 
    if (response.StatusCode == System.Net.HttpStatusCode.OK){
-      Console.WriteLine("---< Response (OK)");
-      Console.WriteLine("---< Response Message:");
-      Console.WriteLine(contents);
+      Console.WriteLine("-< Response (200): " + contents);
       return true;
    }
    else {
-      Console.WriteLine("---< Response (FAILED)");
+      Console.WriteLine("-< Response (FAILED)");
       return false;
    }
 }
@@ -71,9 +76,9 @@ async Task<bool> ProcessRepositoriesAsync(HttpClient client) {
 //-----------------------------------------------------------------
 while(true){
 
-   Thread.Sleep(8000);
+   Thread.Sleep(5000);
   // if (isConnected == true && sendMessage == false){
-         Console.WriteLine("---> Sending transaction to DRProxy");
+         Console.WriteLine("-> Sending transaction to DRProxy");
          sendMessage = await ProcessRepositoriesAsync(client);
   // }
 
