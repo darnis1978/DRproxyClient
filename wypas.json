@@ -1,0 +1,459 @@
+{
+    "protoVersion": "000",
+    "IDZ": "1234567890",
+    "deviceType": 2,
+    "printed": false,
+    "data": "eyJhbGciOiJSUzI1NiIsIng1YyI6WyJNSUlGUlRDQ0F5MmdBd0lCQWdJQ2RhRXdEUVlKS29aSWh2Y05BUUVMQlFBd2dac3hDekFKQmdOVkJBWVRBbEJNTVJRd0VnWURWUVFJREF0TllYcHZkMmxsWTJ0cFpURVJNQThHQTFVRUJ3d0lWMkZ5YzNwaGQyRXhKREFpQmdOVkJBc01HME5sYm5SeWRXMGdRMlZ5ZEhsbWFXdGhZMnBwSUdVdFMyRnplVEViTUJrR0ExVUVDZ3dTVUc5emJtVjBJRkJ2YkhOcllTQlRMa0V1TVNBd0hnWURWUVFEREJkUVQxTk9SVlFnWlMxTFlYTjVJRkp2YjNRZ1EwRWdNakFpR0E4eU1ESXpNRFF4TnpFeU5URXhPRm9ZRHpJd016Y3dOREUyTVRJMU1URTRXakE3TVFzd0NRWURWUVFHRXdKUVRERVdNQlFHQTFVRUF4TU5Xa0pJTVRnd01UQXdPVFkxTmpFVU1CSUdBMVVFQ2hNTFVHOXpibVYwSUZNdVFTNHdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCQVFEa04rRmFlVUoydCtPcUdHMUxMY25JRFVpUUpNU0tVWlhPR2IyQnlTbFF0b2wwem14dWVUVnc3dU5Wa04zbkRUQlhvczUvak5VOGNhOHZsRGdBUmpUL2NlSjJyQUR1enErRVhKLzZxVk94QXI1aVVaekRPRUxFelBKV3RxRTV5SFA1RFVsOUovZ3pZRjluUlk4bGIrQnJuMUdFQnBrRWI5R2F5MUlid3o2Y0NTN0VYQlU4MmwxTXJEOENjVnEzU2IvZHlaN21SUWVCb2JSeWxTWmQ2Qy83MmFOZHFXaFQzU3lrTXZIL0hOWjU1L1lkSmlFdy94dEtwWEhVN1pYQklXbWJkcCtFeTc4U25OOW1BK2d5OHRoUkJrUGF5TG1MVmh6bGdRd2VlMzNWWW9RS0YxbHpzVkpMVG1HYitrT05SM3FQUktWUWQ2TkF3a1F1b0lqeEdBRUZBZ01CQUFHamdlMHdnZW93REFZRFZSMFRBUUgvQkFJd0FEQWRCZ05WSFE0RUZnUVVDcDJZVG1sYmRaVmI5emttWDFXZHNnOWZGeEV3SHdZRFZSMGpCQmd3Rm9BVXNXbGxFWXRTYnhtLzhLcWxnNjFmckdpTWNyTXdEZ1lEVlIwUEFRSC9CQVFEQWdYZ01Eb0dBMVVkSHdRek1ERXdMNkF0b0N1R0tXaDBkSEE2THk5bGF5NXdiM051WlhRdVkyOXRMbkJzTDJOeWJDOTBaWE4wTFhKallUSXVZM0pzTUU0R0ExVWRJQVJITUVVd1F3WUxLd1lCQkFHRG4yNEJBUUV3TkRBeUJnZ3JCZ0VGQlFjQ0FSWW1hSFIwY0hNNkx5OWxheTV3YjNOdVpYUXVZMjl0TG5Cc0wyTndjeTl5WTJFeUxtaDBiV3d3RFFZSktvWklodmNOQVFFTEJRQURnZ0lCQUxpcXNHbVZQczRBY3VMcWwvc2VZclFXdGQ3T2xRcDFjQlJrMlRDT3hqZnV6cmpyak85azA3NUFQY3laSXdaODBrbnJLb2xNcTFnWXNuT0hETkI2MUNRSmpIcy91bzNuSDZKRXpTWkdEdFM5WHlheml2OUNxOHh5Ni9MWUtUZTNsQURQRENzakpkSkFlem54ZE9pUit3WHl0ZEVJMnBRZjEycXhqRCtVQVp6cEdDWTc0MWU3dUV6T2c2K3ZGQm9ROEJRQUtudURYY3ppaWxKenBKNEM3ZG5TWllsckFScjM4MnljUUhjNG5EeDM5OGRiOUQ5Tm8yU2RDbUFpby9JOEw2ZjlZeDZ2SEpWcVVJNkpONFRuN2ZmbVo3QWFNNTlGd2FpdmxsZ3NMWHg0c3RldmNneXJid1h5WlFPdHZXdzV3ZlRzcFhXektJcGRFbDc5YjBTVklwRDN4ZkhmcTBocUNHOG9ETFNYMDl2M1pKc3FxL0lzd2FOenlpZlJkRnYzb3k3Nm9FWHFzWjJLRmZlNktjMU13TGJtRm5Md0VDVWhaaTFPdW40OCtBZDM4SHJCQ09WQUhBZDZrZlZRYmcva0gxSlpzV1lsZzhwM1VWSUgxQjM0a25jSjcxY1l2Y2gyT2dVNmxYTDlaUXJzVXRBdkVuY1BtWlNqUWxXY0F4TVVzb0luclVwWmlUODhuNjhINFZpcXhsVW85eXN0N1lYdlFYZHE0OWQxWFR1UlN0eEhYdkozZGNKeGVuZTI4NXV1OUtzWFBQRXFET2JzbzNxZTMwQzFEUG9ubXZuOTJwMGRHcVAvVklNcU5Sbzd0WVpDYjRzRFdCb3Y1TzROYU5XVmpoMGxHWXY5UE9xanBPYjJ1Zk5xUFZRMkgwYW8rQ1V5MnduWGJzVWt1R1FiIl0sImpwa21ldGFkYXRhIjoiZXlKamIzSnlaV3hoZEdsdmJrbGtJam9pVkVaRUxscENTREU0TURFd01EazJOVFl1TWpBeU15MHdOQzB4TjFReE16b3dNRG93TUM0eE1EbGFJbjAiLCJlUGFyYWdvbi5tZi5nb3YucGwiOiJleUozWlhKemFtRWlPaUpLVUV0ZlMwRlRRVjlRUVZKQlIwOU9YM1l5TFRBaUxDSktVRXRKUkNJNklqQXdNVEF3TURBd01EQXdNREF3TURBeU5pSXNJbVJoZEdGS1VFc2lPaUl5TURJekxUQTJMVEEzVkRFd09qTTNPalUyTGpBd01Gb2lMQ0pLVUV0U1JVWWlPbnNpU2xCTFNVUWlPaUl3TURFd01EQXdNREF3TURBd01EQXdNalVpTENKVFNFRXlOVFlpT2lKQ05EQkRNMFE0TWpNek1qUXlORU5GTlRSR01qTXhNek0wTmpSRFJEQkVNRGt5TmtSRlJEVXdSVFkzT0Rnd1JqRkRORGxDUmpJek9EQkdORVUwT1RZMkluMTkifQ.eyJkb2t1bWVudCI6eyJuYWdsb3dlayI6eyJ3ZXJzamEiOiJKUEtfS0FTQV9QQVJBR09OX3YyLTAiLCJkYXRhSlBLIjoiMjAyMy0wNi0wN1QxMDozNzo1Ni4wMDBaIn0sInBvZG1pb3QxIjp7Ik5JUCI6IjUyMjI2MjgyNjIiLCJuYXp3YVBvZCI6IkZpcm1hIEFCQyIsImFkcmVzUG9kIjp7ImtvZFBvY3p0IjoiMTItMzQ1IiwibWllanNjIjoiV2Fyc3phd2EifSwibnJVbmlrIjoiWkJIMTgwMTAwOTY1NiIsIm5yRmFiciI6IlBPMTE5MTc4MDk3IiwibnJFd2lkIjoiMjAyMy8wMDAwMDM3NDQifSwicGFyYWdvbiI6eyJKUEtJRCI6MjYsInBhbWllY0NociI6MSwibnJEb2siOjE2LCJwb3p5Y2phIjpbeyJ0b3dhciI6eyJicnV0dG8iOjM0OCwiY2VuYSI6MzQ4LCJpZFN0UFRVIjoiQyIsImlsb3NjIjoiMSIsIm5hendhIjoiQ2hsZWIgd2llanNraSIsIm9wZXIiOmZhbHNlLCJvcGlzIjpbeyJ0ZWtzdCI6Ik9waXM6RG9tb3d5IHd5cGllayJ9XX19LHsidG93YXIiOnsiYnJ1dHRvIjoxNjksImNlbmEiOjE2OSwiaWRTdFBUVSI6IkEiLCJpbG9zYyI6IjEiLCJuYXp3YSI6IlPDs2wgZG8gV2Fyenl3IEpvZG93YW5hIDFrZyIsIm9wZXIiOmZhbHNlfX0seyJ0b3dhciI6eyJicnV0dG8iOjYzNiwiY2VuYSI6MTU5LCJpZFN0UFRVIjoiQiIsImlsb3NjIjoiNCIsIm5hendhIjoiV29kYSBnYXouIiwib3BlciI6ZmFsc2V9fSx7InRvd2FyIjp7ImJydXR0byI6MTk5LCJjZW5hIjoyOTksImlkU3RQVFUiOiJDIiwiaWxvc2MiOiIxIiwibmF6d2EiOiJOYXDDs2ogV2l0YW1pbm93eTFsIiwib3BlciI6ZmFsc2UsInJhYmF0Ijp7Im5hendhIjoiUHJvbW9jamEiLCJvcGlzIjoiMSIsIndhcnQiOi0xMDB9fX0seyJ0b3dhciI6eyJicnV0dG8iOjM3OSwiY2VuYSI6Mjk5LCJpZFN0UFRVIjoiQyIsImlsb3NjIjoiMSwyMDgiLCJqbSI6ImtnIiwibmF6d2EiOiJKYWLFgmtvIGN6ZXJ3b25lIGx1eiIsIm9wZXIiOmZhbHNlLCJvcGlzIjpbeyJ0ZWtzdCI6Ik9waXM6WmF3c3plIMWbd2llxbxlIn1dLCJyYWJhdCI6eyJvcGlzIjoiMyIsIndhcnQiOjE4fX19LHsidG93YXIiOnsiYnJ1dHRvIjozOTUsImNlbmEiOjM5NSwiaWRTdFBUVSI6IkMiLCJpbG9zYyI6IjEiLCJuYXp3YSI6IlNlciB0d2Fyb2dvd3kgcMOzxYJ0xYJ1c3R5IDI1MGciLCJvcGVyIjpmYWxzZX19LHsidG93YXIiOnsiYnJ1dHRvIjo2MzAsImNlbmEiOjYzMCwiaWRTdFBUVSI6IkMiLCJpbG9zYyI6IjEiLCJuYXp3YSI6IlDFgmF0a2kgxZtuaWFkLiA1MDBnIiwib3BlciI6ZmFsc2V9fSx7InRvd2FyIjp7ImJydXR0byI6NjMwLCJjZW5hIjo2MzAsImlkU3RQVFUiOiJDIiwiaWxvc2MiOiIxIiwibmF6d2EiOiJQxYJhdGtpIMWbbmlhZC4gNTAwZyIsIm9wZXIiOnRydWV9fSx7InRvd2FyIjp7ImJydXR0byI6NDg1LCJjZW5hIjo0ODUsImlkU3RQVFUiOiJDIiwiaWxvc2MiOiIxIiwibmF6d2EiOiJNYXPFgm8gZXh0cmEgODklIG1hc8WCYSAyMDBnIiwib3BlciI6ZmFsc2V9fSx7InRvd2FyIjp7ImJydXR0byI6MTk1LCJjZW5hIjoxOTUsImlkU3RQVFUiOiJDIiwiaWxvc2MiOiIxIiwibmF6d2EiOiJNbGVrbyBVSFQgMiUgdMWCdXN6Y3p1ICAxbCIsIm9wZXIiOmZhbHNlfX0seyJ0b3dhciI6eyJicnV0dG8iOjQ5MDAsImNlbmEiOjQ5MDAsImlkU3RQVFUiOiJCIiwiaWxvc2MiOiIxIiwibmF6d2EiOiJLYXJtYSBXaWxkIDVrZyIsIm9wZXIiOmZhbHNlfX0seyJ0b3dhciI6eyJicnV0dG8iOjQ5MCwiY2VuYSI6MjQ1LCJpZFN0UFRVIjoiQSIsImlsb3NjIjoiMiIsIm5hendhIjoiQmF0b25payBjemVrLiIsIm9wZXIiOmZhbHNlfX0seyJ0b3dhciI6eyJicnV0dG8iOjEyOTAsImNlbmEiOjQzMCwiaWRTdFBUVSI6IkEiLCJpbG9zYyI6IjMiLCJuYXp3YSI6IlBpd28gUHN6ZW4uIiwib3BlciI6ZmFsc2V9fSx7InRvd2FyIjp7ImJydXR0byI6MTU3NiwiY2VuYSI6Mzk4MCwiaWRTdFBUVSI6IkMiLCJpbG9zYyI6IjAsMzk2Iiwiam0iOiJkYWciLCJuYXp3YSI6IlN6eW5rYSBwaWVjei4iLCJvcGVyIjpmYWxzZX19LHsiemFsIjp7Im9wZXIiOmZhbHNlLCJvcGlzIjoiWkFMSUNaS0EiLCJzdW1hIjoxODUsImlkU3RQVFUiOiJBIiwid2FydCI6NjU5fX0seyJyYWJhdCI6eyJuYXp3YSI6IlN0YcWCeSBrbGllbnQgNywwMCAlIiwib3BlciI6ZmFsc2UsIm9waXMiOiIxIiwid2FydCI6LTM4OCwid2FydFdnUFRVIjpbeyJpZFN0UFRVIjoiQiIsIndhcnRTdFBUVSI6LTM4OH1dfX0seyJyYWJhdCI6eyJuYXp3YSI6Iktvc3p0YSIsIm9wZXIiOmZhbHNlLCJvcGlzIjoiMyIsIndhcnQiOjI5OSwid2FydFdnUFRVIjpbeyJpZFN0UFRVIjoiQSIsIndhcnRTdFBUVSI6Mzh9LHsiaWRTdFBUVSI6IkIiLCJ3YXJ0U3RQVFUiOjE1NH0seyJpZFN0UFRVIjoiQyIsIndhcnRTdFBUVSI6MTA3fV19fV0sInN0UFRVIjpbeyJpZCI6IkEiLCJ3YXJ0IjoyMzAwfSx7ImlkIjoiQiIsIndhcnQiOjgwMH0seyJpZCI6IkMiLCJ3YXJ0Ijo1MDB9LHsiaWQiOiJEIiwid2FydCI6MH0seyJpZCI6IkUiLCJ3YXJ0IjoiWlcifV0sInBvZHN1bSI6eyJ3YWx1dGEiOiJQTE4iLCJzdW1hQnJ1dHRvIjoxMDMxNCwic3VtYVBvZCI6ODE2LCJzdW1hT3B1c3QiOi0xNzEsInN1bWFOZXR0byI6W3siaWRTdFBUVSI6IkEiLCJicnV0dG8iOjEzMjgsInZhdCI6MjQ4fSx7ImlkU3RQVFUiOiJCIiwiYnJ1dHRvIjo1MzAyLCJ2YXQiOjM5M30seyJpZFN0UFRVIjoiQyIsImJydXR0byI6MzY4NCwidmF0IjoxNzV9XX0sInRvdGFsIjp7InphcGxad3JvdCI6MTAyNzR9LCJvcGFrIjp7ImRhbmVPcGFrIjpbeyJjZW5hIjo1MCwiaWxvc2MiOjMsIm5hendhIjoiYnV0ZWxrYSgxMjMpIn0seyJjZW5hIjotNTAsImlsb3NjIjoxLCJuYXp3YSI6ImJ1dGVsa2EgemllbG9uYSgxMzMpIn0seyJjZW5hIjotNDAsImlsb3NjIjoyLCJuYXp3YSI6ImJ1dGVsa2EgY3plcndvbmEoMTQzKSJ9LHsiY2VuYSI6LTMwLCJpbG9zYyI6MiwibmF6d2EiOiJidXRlbGthIGJpYcWCYSgxNTMpIn1dLCJ3YXJ0IjotNDB9LCJwbGF0bm9zYyI6W3sicmVzenRhIjpmYWxzZSwiZm9ybWEiOiIxIiwid2FydCI6NDIzOH0seyJyZXN6dGEiOmZhbHNlLCJmb3JtYSI6IjIiLCJ3YXJ0IjoyOTM0fSx7InJlc3p0YSI6ZmFsc2UsImZvcm1hIjoiNCIsIndhcnQiOjY1MH0seyJyZXN6dGEiOmZhbHNlLCJmb3JtYSI6IjEwIiwid2FydCI6NTAwLCJuYXp3YSI6IkthcnRhIGtsaWVudGEifSx7InJlc3p0YSI6ZmFsc2UsImZvcm1hIjoiOCIsIndhcnQiOjYwMH0seyJyZXN6dGEiOmZhbHNlLCJrdXJzV2FsIjo0NjQwMCwid2FydFdhbHV0eSI6MzAwLCJ3YWx1dGEiOiJFVVIiLCJmb3JtYSI6IjMiLCJ3YXJ0IjoxMzkyfSx7InJlc3p0YSI6dHJ1ZSwiZm9ybWEiOiIxIiwid2FydCI6NDB9XSwiemFrU3ByemVkIjoiMjAyMy0wNi0wN1QxMDozNzo1Ni4wMDBaIiwibnJLYXN5IjoiMDA0Iiwia2FzamVyIjoiS2FzamVyMSIsIm5yUGFyYWciOjEwfX19.IeMP1WlwlxAVi3tVi6fpC6hQl6SyrIr4Rrr8VRLOo8NEFZIWiLVu52TgE2SK8M6mSG3S2_KUMOQUFD5DTuN-tHAklGXcK8Qn821Gt66n2qtPSptRCAOkz3OiEHv49TEhcfyhvALanWBUM0Kbg6DchPFr4vJ2_n6f4aYDDG7blZnyDu-WyPDJMkY51GDLS2AYnGRZF1Rp_viM07cqVakPiarYCqdHHhdD__CtiX5qsYbmBo-G32iO6C7NRR6DF3cN-aF3-Vn-n1guUNhLxI64vF87A2qzRO_uu0LXgj-v7mBrZY0dxu9sghL7pPhX5kEn4bsrHvExccj6IopAqlP5AA",
+    "header": [
+        {
+            "headerText": {
+                "headerTextLines": "<div class=\"align-left \">Firma&nbsp;ABC</div><div class=\"align-left \">12-345</div><div class=\"align-left \">Warszawa</div>"
+            }
+        },
+        {
+            "headerData": {
+                "tin": "5222628262",
+                "docNumber": 16,
+                "date": "2023-06-07T10:37:56.000Z",
+                "CPS": 56
+            }
+        }
+    ],
+    "body": [
+        {
+            "sellLine": {
+                "name": "Chleb wiejski",
+                "vatId": "C",
+                "price": 348,
+                "total": 348,
+                "quantity": "1",
+                "desc": "Domowy wypiek",
+                "isStorno": false
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Sól do Warzyw Jodowana 1kg",
+                "vatId": "A",
+                "price": 169,
+                "total": 169,
+                "quantity": "1",
+                "isStorno": false
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Woda gaz.",
+                "vatId": "B",
+                "price": 159,
+                "total": 636,
+                "quantity": "4",
+                "isStorno": false
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Napój Witaminowy1l",
+                "vatId": "C",
+                "price": 299,
+                "total": 299,
+                "quantity": "1",
+                "isStorno": false
+            }
+        },
+        {
+            "discountLine": {
+                "base": 299,
+                "value": 100,
+                "isDiscount": true,
+                "isPercent": false,
+                "name": "Promocja",
+                "isStorno": false,
+                "vatId": "C"
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Jabłko czerwone luz",
+                "vatId": "C",
+                "price": 299,
+                "total": 361,
+                "quantity": "1,208",
+                "unit": "kg",
+                "desc": "Zawsze świeże",
+                "isStorno": false
+            }
+        },
+        {
+            "discountLine": {
+                "base": 361,
+                "value": 18,
+                "isDiscount": false,
+                "isPercent": true,
+                "percent": 500,
+                "isStorno": false,
+                "vatId": "C"
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Ser twarogowy półtłusty 250g",
+                "vatId": "C",
+                "price": 395,
+                "total": 395,
+                "quantity": "1",
+                "isStorno": false
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Płatki śniad. 500g",
+                "vatId": "C",
+                "price": 630,
+                "total": 630,
+                "quantity": "1",
+                "isStorno": false
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Płatki śniad. 500g",
+                "vatId": "C",
+                "price": 630,
+                "total": 630,
+                "quantity": "1",
+                "isStorno": true
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Masło extra 89% masła 200g",
+                "vatId": "C",
+                "price": 485,
+                "total": 485,
+                "quantity": "1",
+                "isStorno": false
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Mleko UHT 2% tłuszczu  1l",
+                "vatId": "C",
+                "price": 195,
+                "total": 195,
+                "quantity": "1",
+                "isStorno": false
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Karma Wild 5kg",
+                "vatId": "B",
+                "price": 4900,
+                "total": 4900,
+                "quantity": "1",
+                "isStorno": false
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Batonik czek.",
+                "vatId": "A",
+                "price": 245,
+                "total": 490,
+                "quantity": "2",
+                "isStorno": false
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Piwo Pszen.",
+                "vatId": "A",
+                "price": 430,
+                "total": 1290,
+                "quantity": "3",
+                "isStorno": false
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Szynka piecz.",
+                "vatId": "C",
+                "price": 3980,
+                "total": 1576,
+                "quantity": "0,396",
+                "unit": "dag",
+                "isStorno": false
+            }
+        },
+        {
+            "advance": {
+                "plu": "ZALICZKA",
+                "vatId": "A",
+                "isStorno": false,
+                "baseValue": 844,
+                "value": 659
+            }
+        },
+        {
+            "discountVat": {
+                "base": 5536,
+                "value": 388,
+                "isDiscount": true,
+                "isPercent": true,
+                "percent": 700,
+                "name": "Stały klient",
+                "isStorno": false,
+                "vatId": "B"
+            }
+        },
+        {
+            "discountBill": {
+                "base": 10015,
+                "value": 299,
+                "isDiscount": false,
+                "isPercent": false,
+                "name": "Koszta",
+                "isStorno": false,
+                "perVat": [
+                    {
+                        "vatId": "A",
+                        "value": 38
+                    },
+                    {
+                        "vatId": "B",
+                        "value": 154
+                    },
+                    {
+                        "vatId": "C",
+                        "value": 107
+                    }
+                ]
+            }
+        },
+        {
+            "discountSummary": {
+                "discounts": 488,
+                "surcharges": 317
+            }
+        },
+        {
+            "vatSummary": {
+                "currency": "PLN",
+                "vatRatesSummary": [
+                    {
+                        "vatId": "A",
+                        "vatRate": 2300,
+                        "vatSale": 1328,
+                        "vatAmount": 248
+                    },
+                    {
+                        "vatId": "B",
+                        "vatRate": 800,
+                        "vatSale": 5302,
+                        "vatAmount": 393
+                    },
+                    {
+                        "vatId": "C",
+                        "vatRate": 500,
+                        "vatSale": 3684,
+                        "vatAmount": 175
+                    }
+                ]
+            }
+        },
+        {
+            "sumInCurrency": {
+                "fiscalTotal": 10314,
+                "totalWithPacks": 10274,
+                "currency": "PLN",
+                "printBig": true,
+                "printable": true
+            }
+        },
+        {
+            "section": {
+                "type": 0
+            }
+        },
+        {
+            "section": {
+                "type": 1
+            }
+        },
+        {
+            "pack": {
+                "name": "butelka(123)",
+                "price": 50,
+                "quantity": "3",
+                "total": 150,
+                "isNegative": false
+            }
+        },
+        {
+            "section": {
+                "type": 2
+            }
+        },
+        {
+            "pack": {
+                "name": "butelka zielona(133)",
+                "price": 50,
+                "quantity": "1",
+                "total": 50,
+                "isNegative": true
+            }
+        },
+        {
+            "pack": {
+                "name": "butelka czerwona(143)",
+                "price": 40,
+                "quantity": "2",
+                "total": 80,
+                "isNegative": true
+            }
+        },
+        {
+            "pack": {
+                "name": "butelka biała(153)",
+                "price": 30,
+                "quantity": "2",
+                "total": 60,
+                "isNegative": true
+            }
+        },
+        {
+            "section": {
+                "type": 100,
+                "amount": -40,
+                "currency": "PLN"
+            }
+        },
+        {
+            "section": {
+                "type": 101,
+                "amount": 10274,
+                "currency": "PLN"
+            }
+        },
+        {
+            "section": {
+                "type": 3
+            }
+        },
+        {
+            "payment": {
+                "type": "1",
+                "amount": 4238,
+                "currency": "PLN"
+            }
+        },
+        {
+            "payment": {
+                "type": "2",
+                "amount": 2934,
+                "currency": "PLN"
+            }
+        },
+        {
+            "payment": {
+                "type": "4",
+                "amount": 650,
+                "currency": "PLN"
+            }
+        },
+        {
+            "payment": {
+                "type": "10",
+                "amount": 500,
+                "name": "Karta klienta",
+                "currency": "PLN"
+            }
+        },
+        {
+            "payment": {
+                "type": "8",
+                "amount": 600,
+                "currency": "PLN"
+            }
+        },
+        {
+            "currencyPayment": {
+                "currencyAmount": 300,
+                "rate": 46400,
+                "code": "EUR",
+                "amount": 1392,
+                "name": "Euro",
+                "currency": "PLN"
+            }
+        },
+        {
+            "rest": {
+                "type": "1",
+                "amount": 40,
+                "currency": "PLN"
+            }
+        },
+        {
+            "fiscalFooter": {
+                "billNumber": 10,
+                "uniqueNumber": "ZBH1801009656",
+                "cashNumber": "004",
+                "cashier": "Kasjer1",
+                "CPS": 56,
+                "date": "2023-06-07T10:37:56.000Z"
+            }
+        },
+        {
+            "addLine": {
+                "id": 20,
+                "data": "<div class=\"align-left \"><span class=\"font-wide \">Klient&nbsp;stały:</span><span class=\"float-right font-wide \">AB1354/2021</span></div>",
+                "width": 80,
+                "CPS": 56
+            }
+        },
+        {
+            "addLine": {
+                "id": 1,
+                "data": "<div class=\"align-left \">Punkty:<span class=\"float-right \">25</span></div>",
+                "width": 80,
+                "CPS": 56
+            }
+        },
+        {
+            "addLine": {
+                "id": 2,
+                "data": "<div class=\"align-left \">Suma&nbsp;punktów:<span class=\"float-right \">450</span></div>",
+                "width": 80,
+                "CPS": 56
+            }
+        },
+        {
+            "infoLine": {
+                "data": "<div class=\"align-center \"><span class=\"font-bold font-italic \">Dziękujemy\\LF</span><span class=\"font-italic \">Zapraszamy&nbsp;ponownie!</span></div>",
+                "width": 80,
+                "CPS": 56
+            }
+        },
+        {
+            "barcode": {
+                "id": 5,
+                "data": "MDAwMTIzNDU2Nw=="
+            }
+        },
+        {
+            "barcode": {
+                "id": 2,
+                "data": "aHR0cHM6Ly93d3cucG9zbmV0LmNvbS5wbC8="
+            }
+        },
+        {
+            "sysNumber": {
+                "data": "0001234567",
+                "width": 80,
+                "CPS": 56
+            }
+        }
+    ],
+    "sign": "21E30FD569709710158B7B558BA7E90BA85097A4B2AC8AF846BAFC5512CEA3C34415921688B56EE764E013648AF0CEA6486DD2DBF29430E414143E434EE37EB470249465DC2BC427F36D46B7AEA7DAAB4F4A9B510803A4CF73A2107BF8F5312171FCA1BC02DA9D605433429B83A0DC84F16BE2F276FE7E9FE1A6030C6EDB9599F20EEF96C8F0C9324639D460CB4B60189C6459175469FEF88CD3B72A55A90F89AAD80AA7471E1743FFF0AD897E6AB186E6068F86DF688EE82ECD451E8317770DF9A177F959FE9F582E50D84BC48EB8BC5F3B036AB344EFEEBB42D7823FAFEE606B658D1DC6EF6C8212FBA4F857E64127E1BB2B1EF13171C8FA228A40AA53F900"
+}

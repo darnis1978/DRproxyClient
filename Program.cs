@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.SignalR.Client;
+using FiscalModel;
 
 var isConnected = false;
 var sendMessage = false;
@@ -50,19 +51,28 @@ hubCon.StartAsync().ContinueWith(task => {
 //-----------------------------------------------------------------
 async Task<bool> ProcessRepositoriesAsync(HttpClient client) {
    //String payload = "{\"CustomerId\": 5,\"CustomerName\": \"Pepsi\"}";
-   var payload = new Dictionary<string, object>
+   string payload;
+
+
+   using (StreamReader r = new StreamReader("zwykly_rabat.json"))
    {
-      {"TranactionNmbr", 1},
-      {"StoreNmbr", 1},
-      {"PosNmbr", clientID},
-      {"CashierName", "Kasjer 1"}
-   };
-   string strPayload = JsonSerializer.Serialize(payload);
-   var response = await client.PostAsync("http://localhost:5130/api/receipt", new StringContent(strPayload, Encoding.UTF8, "application/json"));
+      payload = r.ReadToEnd();
+
+   }
+
+   // string strPayload = JsonSerializer.Serialize(payload);
+
+  CustomerModel strPayload = CustomerModel.FromJson(payload);
+
+   // string strPayload = JsonSerializer.Serialize(payload);
+   var response = await client.PostAsync("http://localhost:5130/api/Receipt", new StringContent(strPayload.ToJson(), Encoding.UTF8, "application/json"));
    var contents = await response.Content.ReadAsStringAsync();
 
    if (response.StatusCode == System.Net.HttpStatusCode.OK){
       Console.WriteLine("-< Response (200): " + contents);
+      DRfiscalResponse_PEPCO re = JsonSerializer.Deserialize<DRfiscalResponse_PEPCO>(contents);
+       Console.WriteLine("-<" + re.UID);
+
       return true;
    }
    else {
@@ -74,14 +84,15 @@ async Task<bool> ProcessRepositoriesAsync(HttpClient client) {
 //-----------------------------------------------------------------
 // Main Loop
 //-----------------------------------------------------------------
-while(true){
+// while(true){
 
    Thread.Sleep(5000);
   // if (isConnected == true && sendMessage == false){
          Console.WriteLine("-> Sending transaction to DRProxy");
          sendMessage = await ProcessRepositoriesAsync(client);
+         
   // }
 
-};
+// }
 
 

@@ -1,0 +1,127 @@
+{
+    "protoVersion": "000",
+    "IDZ": "1234567890",
+    "deviceType": 2,
+    "printed": false,
+    "data": "eyJhbGciOiJSUzI1NiIsIng1YyI6WyJNSUlGUlRDQ0F5MmdBd0lCQWdJQ2RhRXdEUVlKS29aSWh2Y05BUUVMQlFBd2dac3hDekFKQmdOVkJBWVRBbEJNTVJRd0VnWURWUVFJREF0TllYcHZkMmxsWTJ0cFpURVJNQThHQTFVRUJ3d0lWMkZ5YzNwaGQyRXhKREFpQmdOVkJBc01HME5sYm5SeWRXMGdRMlZ5ZEhsbWFXdGhZMnBwSUdVdFMyRnplVEViTUJrR0ExVUVDZ3dTVUc5emJtVjBJRkJ2YkhOcllTQlRMa0V1TVNBd0hnWURWUVFEREJkUVQxTk9SVlFnWlMxTFlYTjVJRkp2YjNRZ1EwRWdNakFpR0E4eU1ESXpNRFF4TnpFeU5URXhPRm9ZRHpJd016Y3dOREUyTVRJMU1URTRXakE3TVFzd0NRWURWUVFHRXdKUVRERVdNQlFHQTFVRUF4TU5Xa0pJTVRnd01UQXdPVFkxTmpFVU1CSUdBMVVFQ2hNTFVHOXpibVYwSUZNdVFTNHdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCRHdBd2dnRUtBb0lCQVFEa04rRmFlVUoydCtPcUdHMUxMY25JRFVpUUpNU0tVWlhPR2IyQnlTbFF0b2wwem14dWVUVnc3dU5Wa04zbkRUQlhvczUvak5VOGNhOHZsRGdBUmpUL2NlSjJyQUR1enErRVhKLzZxVk94QXI1aVVaekRPRUxFelBKV3RxRTV5SFA1RFVsOUovZ3pZRjluUlk4bGIrQnJuMUdFQnBrRWI5R2F5MUlid3o2Y0NTN0VYQlU4MmwxTXJEOENjVnEzU2IvZHlaN21SUWVCb2JSeWxTWmQ2Qy83MmFOZHFXaFQzU3lrTXZIL0hOWjU1L1lkSmlFdy94dEtwWEhVN1pYQklXbWJkcCtFeTc4U25OOW1BK2d5OHRoUkJrUGF5TG1MVmh6bGdRd2VlMzNWWW9RS0YxbHpzVkpMVG1HYitrT05SM3FQUktWUWQ2TkF3a1F1b0lqeEdBRUZBZ01CQUFHamdlMHdnZW93REFZRFZSMFRBUUgvQkFJd0FEQWRCZ05WSFE0RUZnUVVDcDJZVG1sYmRaVmI5emttWDFXZHNnOWZGeEV3SHdZRFZSMGpCQmd3Rm9BVXNXbGxFWXRTYnhtLzhLcWxnNjFmckdpTWNyTXdEZ1lEVlIwUEFRSC9CQVFEQWdYZ01Eb0dBMVVkSHdRek1ERXdMNkF0b0N1R0tXaDBkSEE2THk5bGF5NXdiM051WlhRdVkyOXRMbkJzTDJOeWJDOTBaWE4wTFhKallUSXVZM0pzTUU0R0ExVWRJQVJITUVVd1F3WUxLd1lCQkFHRG4yNEJBUUV3TkRBeUJnZ3JCZ0VGQlFjQ0FSWW1hSFIwY0hNNkx5OWxheTV3YjNOdVpYUXVZMjl0TG5Cc0wyTndjeTl5WTJFeUxtaDBiV3d3RFFZSktvWklodmNOQVFFTEJRQURnZ0lCQUxpcXNHbVZQczRBY3VMcWwvc2VZclFXdGQ3T2xRcDFjQlJrMlRDT3hqZnV6cmpyak85azA3NUFQY3laSXdaODBrbnJLb2xNcTFnWXNuT0hETkI2MUNRSmpIcy91bzNuSDZKRXpTWkdEdFM5WHlheml2OUNxOHh5Ni9MWUtUZTNsQURQRENzakpkSkFlem54ZE9pUit3WHl0ZEVJMnBRZjEycXhqRCtVQVp6cEdDWTc0MWU3dUV6T2c2K3ZGQm9ROEJRQUtudURYY3ppaWxKenBKNEM3ZG5TWllsckFScjM4MnljUUhjNG5EeDM5OGRiOUQ5Tm8yU2RDbUFpby9JOEw2ZjlZeDZ2SEpWcVVJNkpONFRuN2ZmbVo3QWFNNTlGd2FpdmxsZ3NMWHg0c3RldmNneXJid1h5WlFPdHZXdzV3ZlRzcFhXektJcGRFbDc5YjBTVklwRDN4ZkhmcTBocUNHOG9ETFNYMDl2M1pKc3FxL0lzd2FOenlpZlJkRnYzb3k3Nm9FWHFzWjJLRmZlNktjMU13TGJtRm5Md0VDVWhaaTFPdW40OCtBZDM4SHJCQ09WQUhBZDZrZlZRYmcva0gxSlpzV1lsZzhwM1VWSUgxQjM0a25jSjcxY1l2Y2gyT2dVNmxYTDlaUXJzVXRBdkVuY1BtWlNqUWxXY0F4TVVzb0luclVwWmlUODhuNjhINFZpcXhsVW85eXN0N1lYdlFYZHE0OWQxWFR1UlN0eEhYdkozZGNKeGVuZTI4NXV1OUtzWFBQRXFET2JzbzNxZTMwQzFEUG9ubXZuOTJwMGRHcVAvVklNcU5Sbzd0WVpDYjRzRFdCb3Y1TzROYU5XVmpoMGxHWXY5UE9xanBPYjJ1Zk5xUFZRMkgwYW8rQ1V5MnduWGJzVWt1R1FiIl0sImpwa21ldGFkYXRhIjoiZXlKamIzSnlaV3hoZEdsdmJrbGtJam9pVkVaRUxscENTREU0TURFd01EazJOVFl1TWpBeU15MHdOQzB4TjFReE16b3dNRG93TUM0eE1EbGFJbjAiLCJlUGFyYWdvbi5tZi5nb3YucGwiOiJleUozWlhKemFtRWlPaUpLVUV0ZlMwRlRRVjlRUVZKQlIwOU9YM1l5TFRBaUxDSktVRXRKUkNJNklqQXdNVEF3TURBd01EQXdNREF3TURBeE9DSXNJbVJoZEdGS1VFc2lPaUl5TURJekxUQTJMVEEzVkRFd09qTXdPakF6TGpBd01Gb2lMQ0pLVUV0U1JVWWlPbnNpU2xCTFNVUWlPaUl3TURBd01EQXdNREF3TURBd01EQXdNREFpTENKVFNFRXlOVFlpT2lJd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd0luMTkifQ.eyJkb2t1bWVudCI6eyJuYWdsb3dlayI6eyJ3ZXJzamEiOiJKUEtfS0FTQV9QQVJBR09OX3YyLTAiLCJkYXRhSlBLIjoiMjAyMy0wNi0wN1QxMDozMDowMy4wMDBaIn0sInBvZG1pb3QxIjp7Ik5JUCI6IjUyMjI2MjgyNjIiLCJuYXp3YVBvZCI6IkZpcm1hIEFCQyIsImFkcmVzUG9kIjp7ImtvZFBvY3p0IjoiMTItMzQ1IiwibWllanNjIjoiV2Fyc3phd2EifSwibnJVbmlrIjoiWkJIMTgwMTAwOTY1NiIsIm5yRmFiciI6IlBPMTE5MTc4MDk3IiwibnJFd2lkIjoiMjAyMy8wMDAwMDM3NDQifSwicGFyYWdvbiI6eyJKUEtJRCI6MTgsInBhbWllY0NociI6MSwibnJEb2siOjgsInBvenljamEiOlt7InRvd2FyIjp7ImJydXR0byI6MzQ4LCJjZW5hIjozNDgsImlkU3RQVFUiOiJDIiwiaWxvc2MiOiIxIiwibmF6d2EiOiJDaGxlYiB3aWVqc2tpIDUwMGciLCJvcGVyIjpmYWxzZX19LHsidG93YXIiOnsiYnJ1dHRvIjoxNjksImNlbmEiOjE2OSwiaWRTdFBUVSI6IkEiLCJpbG9zYyI6IjEiLCJuYXp3YSI6IlPDs2wgZG8gV2Fyenl3IEpvZG93YW5hIDFrZyIsIm9wZXIiOmZhbHNlfX1dLCJzdFBUVSI6W3siaWQiOiJBIiwid2FydCI6MjMwMH0seyJpZCI6IkIiLCJ3YXJ0Ijo4MDB9LHsiaWQiOiJDIiwid2FydCI6NTAwfSx7ImlkIjoiRCIsIndhcnQiOjB9LHsiaWQiOiJFIiwid2FydCI6IlpXIn1dLCJwb2RzdW0iOnsid2FsdXRhIjoiUExOIiwic3VtYUJydXR0byI6NTE3LCJzdW1hUG9kIjo0OSwic3VtYU5ldHRvIjpbeyJpZFN0UFRVIjoiQSIsImJydXR0byI6MTY5LCJ2YXQiOjMyfSx7ImlkU3RQVFUiOiJDIiwiYnJ1dHRvIjozNDgsInZhdCI6MTd9XX0sInRvdGFsIjp7InphcGxad3JvdCI6NTE3fSwicGxhdG5vc2MiOlt7InJlc3p0YSI6ZmFsc2UsImZvcm1hIjoiMiIsIndhcnQiOjUxN31dLCJ6YWtTcHJ6ZWQiOiIyMDIzLTA2LTA3VDEwOjMwOjAzLjAwMFoiLCJuckthc3kiOiIwMDEiLCJrYXNqZXIiOiJLSUVST1dOSUsiLCJuclBhcmFnIjoyfX19.fDsJ8gMm2kPE3VEkJXBi6D4FXOCjSACZCTIZpJefwyrDpLR9nXst_TigBIf391dk_jOnhWK9dLVREOAnfMeSIZdTZw05bzBSeLeC77AyAghcTmzCV5oRpa719vgB_1JVgnWrttiPH7SQrsy4twTu4YwsWC-oeCi3T9Q9BvOUspGR7IwPEETkFzcInpTZVrakEFafZYuvw-Hul1wKdNh1t48b2ooUudxkm1mOYBLYtm5LzIjAiLO1nTa-oBg8UHUbhPlfKqc-ZPAn1MUrlZuz5BW5kLXU2pfK6ZlVq_qZlknjc736gAqxO_Dqu-i3YAisyvPDAI4qBK8YrjrOHepskQ",
+    "header": [
+        {
+            "headerText": {
+                "headerTextLines": "<div class=\"align-left \">Firma&nbsp;ABC</div><div class=\"align-left \">12-345</div><div class=\"align-left \">Warszawa</div>"
+            }
+        },
+        {
+            "headerData": {
+                "tin": "5222628262",
+                "docNumber": 8,
+                "date": "2023-06-07T10:30:03.000Z",
+                "CPS": 56
+            }
+        }
+    ],
+    "body": [
+        {
+            "sellLine": {
+                "name": "Chleb wiejski 500g",
+                "vatId": "C",
+                "price": 340,
+                "total": 340,
+                "quantity": "1",
+                "isStorno": false
+            }
+        },
+        {
+            "discountLine": {
+                "base": 340,
+                "value": 17,
+                "isDiscount": false,
+                "isPercent": true,
+                "percent": 500,
+                "isStorno": false,
+                "vatId": "C"
+            }
+        },
+        {
+            "sellLine": {
+                "name": "Sól do Warzyw Jodowana 1kg",
+                "vatId": "A",
+                "price": 169,
+                "total": 169,
+                "quantity": "1",
+                "isStorno": false
+            }        
+        },
+        {
+            "sellLine": {
+                "name": "Bułka kajzerka",
+                "vatId": "C",
+                "price": 340,
+                "total": 340,
+                "quantity": "1",
+                "isStorno": false
+            }
+        },
+        {
+            "discountLine": {
+                "base": 340,
+                "value": 10,
+                "isDiscount": false,
+                "isPercent": false,
+                "percent": 0,
+                "isStorno": false,
+                "vatId": "C"
+            }
+        },
+        {
+            "vatSummary": {
+                "currency": "PLN",
+                "vatRatesSummary": [
+                    {
+                        "vatId": "A",
+                        "vatRate": 2300,
+                        "vatSale": 169,
+                        "vatAmount": 310
+                    },
+                    {
+                        "vatId": "C",
+                        "vatRate": 500,
+                        "vatSale": 653,
+                        "vatAmount": 311
+                    }
+                ]
+            }
+        },
+        {
+            "sumInCurrency": {
+                "fiscalTotal": 822,
+                "totalWithPacks": 822,
+                "currency": "PLN",
+                "printBig": true,
+                "printable": true
+            }
+        },
+        {
+            "section": {
+                "type": 3
+            }
+        },
+        {
+            "payment": {
+                "type": "2",
+                "amount": 822,
+                "currency": "PLN"
+            }
+        },
+        {
+            "fiscalFooter": {
+                "billNumber": 2,
+                "uniqueNumber": "ZBH1801009656",
+                "cashNumber": "001",
+                "cashier": "KIEROWNIK",
+                "CPS": 56,
+                "date": "2023-06-07T10:30:03.000Z"
+            }
+        }
+    ],
+    "sign": "7C3B09F20326DA43C4DD5124257062E83E055CE0A3480099093219A4979FC32AC3A4B47D9D7B2DFD38A00487F7F75764FE33A78562BD74B55110E0277CC792219753670D396F305278B782EFB03202085C4E6CC2579A11A5AEF5F6F801FF52558275ABB6D88F1FB490AECCB8B704EEE18C2C582FA87828B74FD43D06F394B29191EC8C0F1044E41737089E94D956B6A410569F658BAFC3E1EE975C0A74D875B78F1BDA8A14B9DC649B598E6012D8B66E4BCC88C088B3B59D36BEA0183C50751B84F95F2AA73E64F027D4C52B959BB3E415B990B5D4DA97CAE99955ABFA999649E373BDFA800AB13BF0EABBE8B76008ACCAF3C3008E2A04AF18AE3ACE1DEA6C91"
+}
