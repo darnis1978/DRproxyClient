@@ -2,22 +2,32 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.SignalR.Client;
 using FiscalModel;
+using System.Security.Authentication;
+using System.Security.Cryptography.X509Certificates;
 
 var isConnected = false;
 var sendMessage = false;
-string clientID = args[0];
+//string clientID = args[0];
 
 
 Console.WriteLine("-------------------------------------------------");
-Console.WriteLine("-> run client..... [clinetId:" + clientID + "]");
+Console.WriteLine("-> run client..... [clinetId:" + "1" + "]");
 
-using HttpClient client = new();
+// using HttpClient client = new(new HttpClientHandler
+// {
+//     ClientCertificateOptions = ClientCertificateOption.Manual,
+//     SslProtocols = SslProtocols.Tls12,
+//     ClientCertificates = { new X509Certificate2("D192.168.1.43.crt", "D192.168.1.43.key") }
+// });
+
+HttpClient client = new();
 
 //-----------------------------------------------------------------
 // SingalR Handling
 //-----------------------------------------------------------------
+isConnected = true;
 var hubCon = new HubConnectionBuilder()
-   .WithUrl("http://localhost:5130/connectort")
+   .WithUrl("https://192.168.1.43:7171/connectort")
    .WithAutomaticReconnect()
    .Build();
 
@@ -38,7 +48,7 @@ hubCon.StartAsync().ContinueWith(task => {
    } else {
       Console.WriteLine("-> connected");
       Console.WriteLine("-------------------------------------------------");
-      hubCon.InvokeAsync< string >("RegisterClient", clientID).Wait();
+      hubCon.InvokeAsync< string >("RegisterClient", "1").Wait();
       isConnected = true;
 
    }
@@ -65,7 +75,8 @@ async Task<bool> ProcessRepositoriesAsync(HttpClient client) {
   CustomerModel strPayload = CustomerModel.FromJson(payload);
 
    // string strPayload = JsonSerializer.Serialize(payload);
-   var response = await client.PostAsync("http://localhost:5130/api/Receipt", new StringContent(strPayload.ToJson(), Encoding.UTF8, "application/json"));
+
+   var response = await client.PostAsync("https://192.168.1.43:7171/api/Receipt", new StringContent(strPayload.ToJson(), Encoding.UTF8, "application/json"));
    var contents = await response.Content.ReadAsStringAsync();
 
    if (response.StatusCode == System.Net.HttpStatusCode.OK){
@@ -84,15 +95,15 @@ async Task<bool> ProcessRepositoriesAsync(HttpClient client) {
 //-----------------------------------------------------------------
 // Main Loop
 //-----------------------------------------------------------------
-// while(true){
+ while(true){
 
-   Thread.Sleep(5000);
-  // if (isConnected == true && sendMessage == false){
+    Thread.Sleep(1000);
+  if (isConnected == true && sendMessage == false){
          Console.WriteLine("-> Sending transaction to DRProxy");
-         sendMessage = await ProcessRepositoriesAsync(client);
+       sendMessage = await ProcessRepositoriesAsync(client);
          
-  // }
+   }
 
-// }
+ }
 
 
