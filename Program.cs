@@ -2,34 +2,62 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.SignalR.Client;
 using FiscalModel;
-using System.Security.Authentication;
 using System.Security.Cryptography.X509Certificates;
 
 var isConnected = false;
 var sendMessage = false;
-//string clientID = args[0];
+string clientID = "001";
+string serverUrl = "https://192.168.1.43:7171";
 
 
 Console.WriteLine("-------------------------------------------------");
-Console.WriteLine("-> run client..... [clinetId:" + "1" + "]");
+Console.WriteLine("-> run client..... [clinetId:" + clientID + "]");
 
-// using HttpClient client = new(new HttpClientHandler
-// {
-//     ClientCertificateOptions = ClientCertificateOption.Manual,
-//     SslProtocols = SslProtocols.Tls12,
-//     ClientCertificates = { new X509Certificate2("D192.168.1.43.crt", "D192.168.1.43.key") }
-// });
+HttpClientHandler handler = new();
+handler.ServerCertificateCustomValidationCallback = (m, c, ch, errors) => true;
+try
+{
+   handler.ClientCertificates.Add(new X509Certificate2("192.168.1.43.cert", "192.168.1.43.key"));
+}
+catch (Exception ex)
+{
+   Console.WriteLine($"-> Warning: Could not load client certificate for HttpClient: {ex.Message}");
+}
 
-HttpClient client = new();
+HttpClient client = new(handler);
 
 //-----------------------------------------------------------------
 // SingalR Handling
 //-----------------------------------------------------------------
 isConnected = true;
+
+
 var hubCon = new HubConnectionBuilder()
-   .WithUrl("https://192.168.1.43:7171/connectort")
+   .WithUrl(serverUrl + "/connectort", options =>
+   {
+      options.HttpMessageHandlerFactory = (handler) =>
+      {
+         if (handler is HttpClientHandler clientHandler)
+         {
+            // Pomijamy błędy walidacji certyfikatu serwera (np. dla self-signed)
+            clientHandler.ServerCertificateCustomValidationCallback = (m, c, ch, errors) => true;
+
+            // Załaduj i dołącz certyfikat klienta (jeśli serwer go wymaga)
+            try
+            {
+               clientHandler.ClientCertificates.Add(new X509Certificate2("192.168.1.43.cert", "192.168.1.43.key"));
+            }
+            catch (Exception ex)
+            {
+               Console.WriteLine($"-> Warning: Could not load client certificate: {ex.Message}");
+            }
+         }
+         return handler;
+      };
+   })
    .WithAutomaticReconnect()
    .Build();
+
 
 // waiting for server feedback
 hubCon.On<string>("ReceiveMessage", (message) =>
@@ -41,52 +69,70 @@ hubCon.On<string>("ReceiveMessage", (message) =>
 });
 
 // start signalR client
-hubCon.StartAsync().ContinueWith(task => {
-      Console.WriteLine("-> connecting to message server .......");
-   if (task.IsFaulted) {
+hubCon.StartAsync().ContinueWith(task =>
+{
+   Console.WriteLine("-> connecting to message server .......");
+   if (task.IsFaulted)
+   {
       Console.WriteLine("There was an error opening the connection:{0}");
-   } else {
+   }
+   else
+   {
+
       Console.WriteLine("-> connected");
       Console.WriteLine("-------------------------------------------------");
-      hubCon.InvokeAsync< string >("RegisterClient", "1").Wait();
+      hubCon.InvokeAsync<string>("RegisterClient", clientID).Wait();
       isConnected = true;
 
    }
-}).Wait();                                    
+}).Wait();
+
 //-----------------------------------------------------------------
 
 
 //-----------------------------------------------------------------
 // Sending TX to DRProxy
 //-----------------------------------------------------------------
-async Task<bool> ProcessRepositoriesAsync(HttpClient client) {
-   //String payload = "{\"CustomerId\": 5,\"CustomerName\": \"Pepsi\"}";
+async Task<bool> ProcessRepositoriesAsync(HttpClient client)
+{
    string payload;
-
-
    using (StreamReader r = new StreamReader("zwykly_rabat.json"))
    {
       payload = r.ReadToEnd();
 
    }
 
-   // string strPayload = JsonSerializer.Serialize(payload);
-
-  CustomerModel strPayload = CustomerModel.FromJson(payload);
-
-   // string strPayload = JsonSerializer.Serialize(payload);
-
-   var response = await client.PostAsync("https://192.168.1.43:7171/api/Receipt", new StringContent(strPayload.ToJson(), Encoding.UTF8, "application/json"));
+   CustomerModel strPayload = CustomerModel.FromJson(payload);
+   var response = await client.PostAsync(serverUrl + "/api/Receipt", new StringContent(strPayload.ToJson(), Encoding.UTF8, "application/json"));
    var contents = await response.Content.ReadAsStringAsync();
 
-   if (response.StatusCode == System.Net.HttpStatusCode.OK){
+   if (response.StatusCode == System.Net.HttpStatusCode.OK)
+   {
       Console.WriteLine("-< Response (200): " + contents);
-      DRfiscalResponse_PEPCO re = JsonSerializer.Deserialize<DRfiscalResponse_PEPCO>(contents);
-       Console.WriteLine("-<" + re.UID);
+      if (string.IsNullOrWhiteSpace(contents))
+      {
+         Console.WriteLine("-< Warning: Received empty response from server.");
+         return true;
+      }
+      try
+      {
+         DRfiscalResponse_PEPCO? re = JsonSerializer.Deserialize<DRfiscalResponse_PEPCO>(contents);
+         if (re == null)
+         {
+            Console.WriteLine("-< Warning: Deserialized response is null.");
+            return true;
+         }
+         Console.WriteLine("-<" + re.UID);
+      }
+      catch (JsonException)
+      {
+         Console.WriteLine("-< Error: Response is not a valid JSON.");
+      }
 
       return true;
    }
-   else {
+   else
+   {
       Console.WriteLine("-< Response (FAILED)");
       return false;
    }
@@ -95,15 +141,17 @@ async Task<bool> ProcessRepositoriesAsync(HttpClient client) {
 //-----------------------------------------------------------------
 // Main Loop
 //-----------------------------------------------------------------
- while(true){
+while (true)
+{
 
-    Thread.Sleep(1000);
-  if (isConnected == true && sendMessage == false){
-         Console.WriteLine("-> Sending transaction to DRProxy");
-       sendMessage = await ProcessRepositoriesAsync(client);
-         
+   Thread.Sleep(10000);
+   if (isConnected == true && sendMessage == false)
+   {
+      Console.WriteLine("-> Sending transaction to DRProxy");
+      sendMessage = await ProcessRepositoriesAsync(client);
+
    }
 
- }
+}
 
 
